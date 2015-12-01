@@ -1,0 +1,7 @@
+name 'formatron_common'
+version '0.1.0'
+supports 'ubuntu'
+depends 'apt'
+depends 'build-essential'
+depends 'formatron_filebeat'
+depends 'formatron_sensu'
