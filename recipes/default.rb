@@ -1,3 +1,5 @@
 include_recipe 'formatron_common::dependencies'
 include_recipe 'formatron_common::filebeat'
+include_recipe 'formatron_common::topbeat'
+include_recipe 'formatron_common::packetbeat'
 include_recipe 'formatron_common::sensu'

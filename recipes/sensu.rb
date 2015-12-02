@@ -1,5 +1,4 @@
 configuration = node['formatron_common']['configuration']
-subscriptions = node['formatron_common']['sensu']['subscriptions']
 hosted_zone_name = configuration['dsl']['global']['hosted_zone_name']
 
 sensu_config = configuration['config']['sensu']
@@ -13,7 +12,8 @@ node.override['formatron_sensu']['rabbitmq']['host'] = sensu_hostname
 node.override['formatron_sensu']['rabbitmq']['vhost'] = rabbitmq_vhost
 node.override['formatron_sensu']['rabbitmq']['user'] = rabbitmq_user
 node.override['formatron_sensu']['rabbitmq']['password'] = rabbitmq_password
-node.override['formatron_sensu']['client']['subscriptions'] = subscriptions
 node.override['formatron_sensu']['checks'] = sensu_checks unless sensu_checks.nil?
 node.override['formatron_sensu']['gems'] = sensu_gems unless sensu_gems.nil?
+
+include_recipe 'formatron_sensu::default'
 include_recipe 'formatron_sensu::client'
