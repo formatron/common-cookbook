@@ -1,5 +1,5 @@
 name 'formatron_common'
-version '0.1.0'
+version '0.1.1'
 description 'Formatron common cookbook'
 source_url 'https://github.com/formatron/common-cookbook'
 issues_url 'https://github.com/formatron/common-cookbook/issues'

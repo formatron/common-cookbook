@@ -33,11 +33,15 @@ node.default['formatron_common']['configuration'] = {
           'gem' => 'sensu-plugins-cpu-checks',
           'version' => '0.0.4'
         }
-      },
-      'rabbitmq' => {
-        'vhost' => '/sensu',
-        'user' => 'sensu',
-        'password' => 'password'
+      }
+    },
+    'secrets' => {
+      'sensu' => {
+        'rabbitmq' => {
+          'vhost' => '/sensu',
+          'user' => 'sensu',
+          'password' => 'password'
+        }
       }
     }
   }
