@@ -14,6 +14,9 @@ node.default['formatron_common']['configuration'] = {
       'sub_domain' => 'logstash',
       'port' => '5044'
     },
+    'ntp_server' => {
+      'sub_domain' => 'ntp'
+    },
     'sensu' => {
       'sub_domain' => 'sensu',
       'checks' => {
