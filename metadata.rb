@@ -1,5 +1,5 @@
 name 'formatron_common'
-version '0.1.4'
+version '0.1.5'
 description 'Formatron common cookbook'
 maintainer 'Peter Halliday'
 maintainer_email 'pghalliday@gmail.com'
