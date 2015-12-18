@@ -7,7 +7,6 @@ node.default['formatron_filebeat']['logstash']['port'] = logstash_config['beats_
 include_recipe 'formatron_filebeat::default'
 
 formatron_filebeat_prospector 'syslog' do
-  document_type 'syslog'
   paths [
     '/var/log/syslog'
   ]
